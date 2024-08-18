@@ -1,159 +1,152 @@
-Tasks
+About Introductions to Databases
+--------------------------------------------------------------------------------------------------
+
 0. A Magical Database for Your Dream Online Bookstore Adventure!
-Imagine you’re tasked with designing a MySQL database for an online bookstore. The database should store information about books, authors, customers, orders, and order details. Here’s an overview of the database schema:
+--------------------------------------------------------------------------------------------------
+
+Imagine you’re tasked with designing a MySQL database for an online bookstore.
+The database should store information about books, authors, customers, orders, and order details.
+Here’s an overview of the database schema:
 
 Database Name: alx_book_store
 
-Books: Stores information about books available in the bookstore.
+- Books: Stores information about books available in the bookstore.
 
-book_id (Primary Key)
-title VARCHAR(130)
-author_id (Foreign Key referencing Authors table)
-price DOUBLE
-publication_date DATE
-Authors: Stores information about authors.
+	book_id (Primary Key)
+	title VARCHAR(130)
+	author_id (Foreign Key referencing Authors table)
+	price DOUBLE
+	publication_date DATE
 
-author_id (Primary Key)
-author_name VARCHAR(215)
-Customers: Stores information about customers.
+- Authors: Stores information about authors.
 
-customer_id (Primary Key)
-customer_name VARCHAR(215)
-email VARCHAR(215)
-address TEXT
-Orders: Stores information about orders placed by customers.
+	author_id (Primary Key)
+	author_name VARCHAR(215)
 
-order_id (Primary Key)
-customer_id (Foreign Key referencing Customers table)
-order_date DATE
-Order_Details: Stores information about the books included in each order.
+- Customers: Stores information about customers.
 
-orderdetailid (Primary Key)
-order_id (Foreign Key referencing Orders table)
-book_id (Foreign Key referencing Books table)
-quantity DOUBLE
+	customer_id (Primary Key)
+	customer_name VARCHAR(215)
+	email VARCHAR(215)
+	address TEXT
+
+- Orders: Stores information about orders placed by customers.
+
+	order_id (Primary Key)
+	customer_id (Foreign Key referencing Customers table)
+	order_date DATE
+
+- Order_Details: Stores information about the books included in each order.
+
+	orderdetailid (Primary Key)
+	order_id (Foreign Key referencing Orders table)
+	book_id (Foreign Key referencing Books table)
+	quantity DOUBLE
+
 NOTE : - The file extension should be alx_book_store.sql file - All SQL keywords should be in uppercase
 
 Repo:
 
-GitHub repository: Intro_to_DB
-File: alx_book_store.sql
-   
+	GitHub repository: Intro_to_DB
+	File: alx_book_store.sql
+
 1. Let's Build Your Database: Your Gateway to Data Adventure!
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
+--------------------------------------------------------------------------------------------------
+
 Write a simple python script that creates the database alx_book_store in your MySQL server.
 
-Name of python script should be MySQLServer.py
-If the database alx_book_store already exists, your script should not fail
-You are not allowed to use the SELECT or SHOW statements
+	Name of python script should be MySQLServer.py
+	If the database alx_book_store already exists, your script should not fail
+	You are not allowed to use the SELECT or SHOW statements
+
 NOTE :
 
-Required to print message such as Database 'alx_book_store' created successfully! when database is successfully created.
+	Required to print message such as Database 'alx_book_store' created successfully! when database is successfully created.
 
-Print error message to handle errors when failing to connect to the DB.
+	Print error message to handle errors when failing to connect to the DB.
 
-handle open and close of the DB in your script.
+	handle open and close of the DB in your script.
 
 Repo:
 
-GitHub repository: Intro_to_DB
-File: MySQLServer.py
-   
+	GitHub repository: Intro_to_DB
+	File: MySQLServer.py
+
 2. Create Your Magical Tables
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
+--------------------------------------------------------------------------------------------------
+
 Write a script that creates all the tables below in alx_book_store in your MySQL server.
 
-Tables
+- Tables
 
-For each table/relation below, you can find the attributes in task 0
-books
-authors
-customers
-orders
-order details
-Name of the file should be task_2.sql
+	For each table/relation below, you can find the attributes in task 0
+	 books
+	 authors
+	 customers
+	 orders
+	 order details
+- Name of the file should be task_2.sql
 
-All SQL keywords should be in uppercase
+- All SQL keywords should be in uppercase
 
-Repo:
-
-GitHub repository: Intro_to_DB
-File: task_2.sql
-    
 3. List all the tables created
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Write a script that list all the tables in alx_book_store in your MySQL server.
+--------------------------------------------------------------------------------------------------
 
-The name of the file should be task_3.sql
-The database name will be passed as argument of mysql command
-Repo:
+- Write a script that list all the tables in alx_book_store in your MySQL server.
 
-GitHub repository: Intro_to_DB
-File: task_3.sql
-   
+	The name of the file should be task_3.sql
+	The database name will be passed as argument of mysql command
+
 4. Full description
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Write a script that prints the full description of the table books from the database alx_book_store in your MySQL server.
+--------------------------------------------------------------------------------------------------
 
-The database name will be passed as an argument of the mysql command
-You are not allowed to use the DESCRIBE or EXPLAIN statements
-The name of the file should be task_4.sql
-All SQL keywords should be in uppercase
-Repo:
+- Write a script that prints the full description of the table books from the database alx_book_store in your MySQL server.
 
-GitHub repository: Intro_to_DB
-File: task_4.sql
-   
+	The database name will be passed as an argument of the mysql command
+	You are not allowed to use the DESCRIBE or EXPLAIN statements
+	The name of the file should be task_4.sql
+	All SQL keywords should be in uppercase
+
 5. Populating Your Database with Your Very First Data
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
+--------------------------------------------------------------------------------------------------
+
 Write a script that inserts a single row in the table customer (database alx_book_store) in your MySQL server.
 
-Singel data insertion
+- Singel data insertion
 
-customer_id = 1
-customer_name = Cole Baidoo
-email = cbaidoo@sandtech.com
-address = 123 Happiness Ave.
-The database name will be passed as an argument of the mysql command
+	customer_id = 1
+	customer_name = Cole Baidoo
+	email = cbaidoo@sandtech.com
+	address = 123 Happiness Ave.
 
-Name of the file should be task_5.sql
+- The database name will be passed as an argument of the mysql command
 
-All SQL keywords should be in uppercase
+- Name of the file should be task_5.sql
 
-Repo:
+- All SQL keywords should be in uppercase
 
-GitHub repository: Intro_to_DB
-File: task_5.sql
-   
 6. Populating Your Database with Your More Data
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Write a script that inserts multiple rows in the table customer (database alx_book_store) in your MySQL server.
+--------------------------------------------------------------------------------------------------
 
-Data insertion
+- Write a script that inserts multiple rows in the table customer (database alx_book_store) in your MySQL server.
 
-    - `customer_id` = `2`
-    - `customer_name` = `Blessing Malik`
-    - `email` = `bmalik@sandtech.com`
-    - `address` = `124 Happiness  Ave.`
-    - `customer_id` = `3`
-    - `customer_name` = `Obed Ehoneah`
-    - `email` = `eobed@sandtech.com`
-    - `address` = `125 Happiness  Ave.`
-    - `customer_id` = `4`
-    - `customer_name` = `Nehemial Kamolu`
-    - `email` = `nkamolu@sandtech.com`
-    - `address` = `126 Happiness  Ave.`
-The database name will be passed as an argument of the mysql command
+	Data insertion
 
-The name of the file should be task_6.sql
+	`customer_id` = `2`
+	`customer_name` = `Blessing Malik`
+	`email` = `bmalik@sandtech.com`
+	`address` = `124 Happiness  Ave.`
 
-Repo:
+	`customer_id` = `3`
+	`customer_name` = `Obed Ehoneah`
+	`email` = `eobed@sandtech.com`
+	`address` = `125 Happiness  Ave.`
 
-GitHub repository: Intro_to_DB
-File: task_6.sql
+	`customer_id` = `4`
+	`customer_name` = `Nehemial Kamolu`
+	`email` = `nkamolu@sandtech.com`
+	`address` = `126 Happiness  Ave.`
+
+- The database name will be passed as an argument of the mysql command
+
+- The name of the file should be task_6.sql
