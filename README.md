@@ -4,7 +4,7 @@
 # 0. A Magical Database for Your Dream Online Bookstore Adventure!
 --------------------------------------------------------------------------------------------------
 
-Imagine you’re tasked with designing a MySQL database for an online bookstore.
+**Imagine you’re tasked with designing a MySQL database for an online bookstore.**
 The database should store information about books, authors, customers, orders, and order details.
 Here’s an overview of the database schema:
 
@@ -45,7 +45,7 @@ Here’s an overview of the database schema:
 
 **NOTE** **:** - The file extension should be alx_book_store.sql file - All SQL keywords should be in uppercase
 
-Repo:
+**Repo:**
 
 	GitHub repository: Intro_to_DB
 	File: alx_book_store.sql
@@ -75,7 +75,7 @@ Repo:
 # 2. Create Your Magical Tables
 --------------------------------------------------------------------------------------------------
 
-Write a script that creates all the tables below in alx_book_store in your MySQL server.
+**Write a script that creates all the tables below in alx_book_store in your MySQL server.**
 
 - **Tables**
 
